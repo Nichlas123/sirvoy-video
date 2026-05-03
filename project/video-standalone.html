@@ -725,6 +725,7 @@ Object.assign(window, {
   Stage, PlaybackBar,
 });
 
+
 </script>
 <script type="text/babel">
 // Shared design tokens, sidebar, and placeholder "brand" chips.
@@ -953,6 +954,7 @@ const Shell = ({ active, children, width = 1280, height = 820, bg = TOKENS.canva
 );
 
 Object.assign(window, { TOKENS, Icon, Sidebar, ChannelMark, ChannelName, NavyButton, Chip, Card, Shell });
+
 </script>
 <script type="text/babel">
 
@@ -1374,6 +1376,7 @@ Object.assign(window, {
   TweakSlider, TweakToggle, TweakRadio, TweakSelect,
   TweakText, TweakNumber, TweakColor, TweakButton,
 });
+
 </script>
 
 <script type="text/babel">
@@ -1718,7 +1721,7 @@ const Sidebar = ({ activeId, hoveredId, slideK, introT = -1 }) => {
           overflow: 'hidden',
           flexShrink: 0,
         }}>
-          <img src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTIzNCAxMjMzIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cmVjdCB4PSIxIiB3aWR0aD0iMTIzMyIgaGVpZ2h0PSIxMjMzIiBmaWxsPSIjRjg3QzU2Ij48L3JlY3Q+CjxwYXRoIGQ9Ik02MjguNTM5IDM2MS4yNjVMNjkyLjc4MSAyNjQuODExQzY5NS40OSAyNjAuNzUyIDY5Mi41NjQgMjU1LjMyMiA2ODcuNjg1IDI1NS4zMjJINTU5LjIwN0M1NTQuMzA4IDI1NS4zMjIgNTUxLjM5NSAyNjAuNzUyIDU1NC4wOTggMjY0LjgxMUw2MTguMzMzIDM2MS4yNjVDNjIwLjc1MyAzNjQuOTA0IDYyNi4xMTIgMzY0LjkwNCA2MjguNTM5IDM2MS4yNjVaIiBmaWxsPSJ3aGl0ZSI+PC9wYXRoPgo8cGF0aCBkPSJNODU1Ljk3NSA2NTguMzM3QzY5Ni45MjggNjY5Ljg5OCA1MzUuOTAxIDY2OS42MjkgMzcyLjc5IDY1OC4xOTlDMzYyLjM0OCA2NTYuNzg5IDM2MC4zODkgNjQ4LjMxNiAzNjAuNTQgNjQwLjc2OEMzNzkuMzMzIDUxNS4zNjggNDg2LjQyMSA0MTkuMjIzIDYxNS43NzMgNDE5LjIyM0M3NDYuMTk4IDQxOS4yMjMgODU3LjYzMiA1MTYuNDg5IDg3MS40NDcgNjQzLjg3N0M4NzIuODA4IDY1Ni4yNTEgODU5LjY3NyA2NTguMDAyIDg1NS45NzUgNjU4LjMzN1oiIGZpbGw9IndoaXRlIj48L3BhdGg+CjxwYXRoIGQ9Ik0zNTMuNTY5IDcyMC41NzFDNTMzLjU5MiA3MzUuMjM1IDcwMi42NjcgNzM0LjkxNCA4NzkuMjExIDcyMC4wOEM4OTYuMTA0IDcxOC42NjMgOTAwLjc5OSA3MjEuMDU3IDkwNi4wOTIgNzMxLjMxM0w5NTkuOTk4IDgyOS42OTVDOTY3LjI1NyA4NDguNjczIDk1OS44OTIgODUzLjk1OSA5NDAuMDI4IDg1Ni4zMDdDNzMwLjkwOCA4ODAuOTY0IDUxMy42MjIgODgwLjUxOCAyODcuNTExIDg1NS4yNzFDMjY2LjMzMiA4NTIuOTI5IDI3MC41MiA4MzguMzEyIDI3My4zNDEgODMyLjEwMkwzMjcuNTQ5IDczMy4xNjlDMzMzLjI1IDcyMS4zOTEgMzQyLjk4MiA3MTkuNjk5IDM1My41NjkgNzIwLjU3MVoiIGZpbGw9IndoaXRlIj48L3BhdGg+Cjwvc3ZnPg==" alt="Sirvoy"
+          <img src="channels/sirvoy-logo.svg" alt="Sirvoy"
             style={{ width: '100%', height: '100%', display: 'block' }} />
         </div>
         {/* placeholder name bars */}
@@ -3453,7 +3456,6 @@ const FlowScene = () => {
       <SaveToast k={toastK} />
 
       <Cursor x={cur.x} y={cur.y} opacity={lt >= T.s8Start ? 0 : cur.o} tap={isTapping && lt < T.s8Start} />
-      <StepCaption t={lt} />
       </div>
     </div>
   );
