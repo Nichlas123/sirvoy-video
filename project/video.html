@@ -1848,6 +1848,8 @@ const StepCaption = ({ t }) => {
     { n: 4, label: 'Open Calendar',        start: 8.9,  end: 10.65 },
     { n: 5, label: 'Find booking',         start: 11.2, end: 12.85 },
     { n: 6, label: 'Booking detail',       start: 13.4, end: 15.5 },
+    { n: 7, label: 'Open Statistics',      start: 16.4, end: 17.8 },
+    { n: 8, label: 'Statistics',           start: 18.5, end: 22.2 },
   ];
   return (
     <>
@@ -2113,6 +2115,7 @@ const FlowScene = () => {
       <SaveToast k={toastK} />
 
       <Cursor x={cur.x} y={cur.y} opacity={lt >= T.s8Start ? 0 : cur.o} tap={isTapping && lt < T.s8Start} />
+      <StepCaption t={lt} />
       </div>
     </div>
   );
